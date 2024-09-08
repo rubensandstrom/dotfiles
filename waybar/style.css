@@ -1,0 +1,98 @@
+* {
+    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+}
+
+window#waybar {
+    background-color: #181616;
+}
+
+
+#workspaces button {
+    padding: 0 4px;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#temperature,
+#backlight,
+#network,
+#pulseaudio {
+    padding: 0 10px;
+}
+
+#clock {
+    color: #d0d0d0;
+}
+
+#battery {
+    color: #d0d0d0;
+}
+
+/*#battery.charging, #battery.plugged {*/
+/*    color: #7e8d50;*/
+/*}*/
+
+@keyframes blink {
+    to {
+        color: #ac4142;
+    }
+}
+
+/* Using steps() instead of linear as a timing function to limit cpu usage */
+#battery.critical:not(.charging) {
+    color: #d0d0d0;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#cpu {
+    color: #d0d0d0;
+}
+
+#memory {
+    color: #d0d0d0;
+}
+
+#backlight {
+    color: #d0d0d0;
+}
+
+#network {
+    color: #d0d0d0;
+}
+
+#network.disconnected {
+    color: #d0d0d0;
+}
+
+#pulseaudio.source {
+    color: #d0d0d0;
+}
+
+#pulseaudio {
+    color: #d0d0d0;
+}
+#pulseaudio.muted {
+    color: #d0d0d0;
+}
+
+#temperature {
+    color: #d0d0d0;
+}
+
+#temperature.critical {
+    background-color: #d0d0d0;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
