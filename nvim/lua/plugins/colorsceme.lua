@@ -1,8 +1,8 @@
 return {
-	"HoNamDuong/hybrid.nvim",
+	"catppuccin/nvim",
 	lazy = false,
 	priority = 1000,
 	config = function()
-		vim.cmd("colorscheme hybrid")
+		vim.cmd("colorscheme catppuccin")
 	end,
 }
