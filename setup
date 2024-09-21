@@ -1,5 +1,15 @@
 #!/bin/bash
+sudo pacman -S neovim kitty hyprland hyprpaper hyprlock go php npm jdk-openjdk julia python3 python-pip python-pynvim lua51 lua-rocks ruby composer ripgrep wl-clipboard perl biber zathura xdotools zip unzip wget texlive-bin texlive-binextra fd fuzzel openssh
+
+sudo npm install -g neovim
+gem install neovim
+
+curl https://sh.rustup.rs -sSf | sh
+
 ln -s ~/dotfiles/nvim ~/.config/nvim
 ln -s ~/dotfiles/hypr ~/.config/hypr
 ln -s ~/dotfiles/kitty ~/.config/kitty
+
+git config --global user.email "rubensandstrom@gmail.com"
+git config --global user.name "Ruben Sandström"
 
