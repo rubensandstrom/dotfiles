@@ -1,8 +1,11 @@
 {
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar at the bottom of your screen
+    "margin-top": 5,
     "height": 24, // Waybar height
-    // "width": 1366, // Waybar width
+    //"width": 1553.5, // Waybar width
+    "margin-left": 5,
+    "margin-right": 5,
     // Choose the order of the modules
     "modules-left": [
         "hyprland/workspaces",
